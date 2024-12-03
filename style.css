@@ -1,65 +1,54 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
-body {
-  font-family: Helvetica;
+.container {
   background-color: crimson;
   min-height: 100vh;
-}
+  font-family: Helvetica;
 
-.container {
-  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 h1 {
-  font-size: 3.5rem;
-  padding-bottom: 20px;
+  font-size: 3.5em;
   color: bisque;
+  margin-bottom: 20px;
 }
 
 .game-block {
-  width: 150px;
   display: grid;
+  width: 150px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 10px;
-
-  padding-bottom: 20px;
 }
 
 .cell {
   width: 75px;
   height: 75px;
-  border: 1px solid black;
-  border-radius: 5px;
   background-color: antiquewhite;
-}
-
-h2 {
-  width: 245px;
-  height: 30px;
-  background-color: blanchedalmond;
   border: 1px solid black;
   border-radius: 5px;
-  margin-bottom: 20px;
 }
 
 .btn {
   padding: 10px 20px;
   font-size: 1.1em;
+  cursor: pointer;
   outline: none;
   background: transparent;
   border: 2px solid black;
   border-radius: 5px;
   background-color: bisque;
-  transition: padding 0.25s;
+  transition: font-size 0.25s;
 }
 .btn:hover {
-  padding: 9px 19px;
+  font-size: 1.2em;
 }
 .btn:active {
-  padding: 11px 21px;
+  font-size: 1em;
 }
